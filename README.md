@@ -3,7 +3,7 @@ S-framework中使用的(based on spring mvc)框架，包括freeMarker 模板作�
 # freeMarker使用
 
 1.设置controlller 中的对象值
-
+```  java
 import javax.servlet.http.HttpServletRequest;
 @Controller
 public class SpringMvcController {
@@ -15,11 +15,12 @@ public class SpringMvcController {
         return mv;
     }
 }
-
+``` 
 此处将name对象 添加到试图，ftl文件解析生成动态页面。利用freeMark的特性我们可以传递list 到页面解析。甚至更复杂的对象。
-
-
+ftl 文件
 2.页面通过${}使用。
+``` ftl 文件
 Hello ${name}
+``` ftl 文件
 
 
