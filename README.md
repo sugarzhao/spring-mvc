@@ -15,12 +15,23 @@ public class SpringMvcController {
         return mv;
     }
 }
-``` 
+```   
+
 此处将name对象 添加到试图，ftl文件解析生成动态页面。利用freeMark的特性我们可以传递list 到页面解析。甚至更复杂的对象。
 ftl 文件
 2.页面通过${}使用。
-``` ftl 文件
+```  html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+<body>
 Hello ${name}
-``` ftl 文件
+</body>
+</html>
+
+``` 
 
 
